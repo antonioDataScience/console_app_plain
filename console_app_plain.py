@@ -5,8 +5,7 @@ import os
 def main():
     try:
         args = open("written_urls.txt", "r").read().splitlines()
-    except Exception as ex:
-        print(ex)
+    except:
         return
     print("Downloading...")
     for i, arg in enumerate(args):
